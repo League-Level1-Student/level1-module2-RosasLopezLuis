@@ -7,5 +7,4 @@ public class Runner {
 		Person person2 = new Person("p2", "strength");
 		Person person3 = new Person("p3", "teleportation");
 	}
-
 }
