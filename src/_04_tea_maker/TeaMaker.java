@@ -9,9 +9,19 @@ public class TeaMaker {
 	/* Figure out how to make a cup of tea in this runner class, using the other classes below */
 	public static void main(String[] args) {
 	TeaBag teabag = new TeaBag("Mint");
-	System.out.println(teabag.getFlavor());
+	Kettle water = new Kettle();
+	Kettle.Water hotWater = new Kettle.Water();
+	Cup cup = new Cup();
+	water.boil();
+	cup.makeTea(teabag,hotWater);
+	
+	
+	//makeTea(teabag, water);
+	//System.out.println(teabag.getFlavor());
+	}	
 	}
-}
+
+
 
 class TeaBag {
 
@@ -58,6 +68,7 @@ class Kettle {
 class Cup {
 
 	private TeaBag teabag;
+	private Kettle.Water hotWater;
 
 	void makeTea(TeaBag teabag, Kettle.Water hotWater) {
 		this.teabag = teabag;
@@ -66,6 +77,8 @@ class Cup {
 		else
 			System.out.println("Can't make tea with cold water! ");
 	}
+
+
 
 }
 
