@@ -47,24 +47,28 @@ public class MinionTest {
 			this.color = color;
 			this.master = master;
 		}	
-
+		
 		public String setMaster(String master) {
 		this.master = master;
 		return master;
 		}
-
+		
 		public String getName() {
 			return name;
 		}
+		
 		public int getEyes() {
 			return eyes ;
 		}
+		
 		public String getColor() {
 			return color;
 		}
+		
 		public String getMaster() {
 			return  master;
 		}
+		
 	}
 	@Test
 	public void testConstructor() {
@@ -89,5 +93,5 @@ public class MinionTest {
 		stuart.setMaster("Napoleon");
 		assertEquals("Napoleon", stuart.getMaster());
 	}
-
+	
 }
