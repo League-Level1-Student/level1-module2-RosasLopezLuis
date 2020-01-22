@@ -3,24 +3,36 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 public class TeaPartyTest {
+	
 	public class TeaParty {
-		private String name;
-		private boolean isWoman;
-		private boolean isKnighted;
-		
-        public String welcome(String name, boolean isWoman, boolean isKnighted) {
-        	this.name = name;
-        	this.isWoman = isWoman;
-        	this.isKnighted = isKnighted;
+		String name;
+		boolean isWoman;
+		boolean isKnighted;
+
+		 public String welcome(String name, boolean isWoman, boolean isKnighted) {
+			this.name = name;
+			this.isWoman = isWoman;
+			this.isKnighted = isKnighted;
+	
+			if(isWoman == true && isKnighted == true) {
+				name = "Hello Lady " + name;
+			}
+			
+			if(isWoman == true && isKnighted == false) {
+				name = "Hello Ms. "+ name;
+			}
+			
+			if(isWoman == false && isKnighted == true) {
+				name = "Hello Sir " + name;
+			}
+			
+			if(isWoman == false && isKnighted == false) {
+				name = "Hello Mr. " + name;
+			}
+			
 			return name;
-        }
-       public String getName() { 
-       if(isWoman = true && isKnighted == true) {
-    	   name = "Lady " + name;
-       }  
-		return name;
-    	   
-       }   
+		 }
+		
 }
 	public class TeaPartyTesting {
 		 /**
@@ -38,5 +50,5 @@ public class TeaPartyTest {
 		      assertEquals("Hello Sir Isaac Newton", teaParty.welcome("Isaac Newton", false, true));
 		 }
 		}
-	
 }
+
