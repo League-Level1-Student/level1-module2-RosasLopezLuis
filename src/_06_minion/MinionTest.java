@@ -28,9 +28,9 @@ This is because there is no Minion class in the package.
  3.
   Next, create a constructor, and getters and setters for all the member variables of the Minion class. 
   If they’re done right, all these tests will pass.
-  
+
   To check, run this MinionTest class and the JUnit tab should show a GREEN bar.
-    
+
  */
 
 public class MinionTest {
@@ -47,28 +47,28 @@ public class MinionTest {
 			this.color = color;
 			this.master = master;
 		}	
-		
+
 		public String setMaster(String master) {
 		this.master = master;
 		return master;
 		}
-		
+
 		public String getName() {
 			return name;
 		}
-		
+
 		public int getEyes() {
 			return eyes ;
 		}
-		
+
 		public String getColor() {
 			return color;
 		}
-		
+
 		public String getMaster() {
 			return  master;
 		}
-		
+
 	}
 	@Test
 	public void testConstructor() {
@@ -93,5 +93,5 @@ public class MinionTest {
 		stuart.setMaster("Napoleon");
 		assertEquals("Napoleon", stuart.getMaster());
 	}
-	
+
 }
