@@ -1,0 +1,23 @@
+Level 1 Checkpoint Module 2
+
+1.
+	public Cat (String name, int napsPerDay){
+	this.name = name;
+	this.napsPerDay = napsPerDay;
+}
+3.
+	String input = JOptionPane.showInputDialog();
+	if(input .equals (name)){
+System.out.println(“awesome”);
+}
+else 
+System.out.println(“lame”);
+4.
+	Int shoes = 4;
+	String iceCream = “Cookies and Cream”);
+	Boolean goingToDance == false;
+	JButton button = new JButton();
+	Cat felix = new Cat(“Felix”);
+5.
+Jam strawb = new Jam(“Strawberry”);
+strawb.spreadOnToast();
